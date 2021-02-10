@@ -13,7 +13,7 @@ podTemplate (containers: [
         node(POD_LABEL) {
             stage('Checkout') {
                        echo 'Checking out project from Git...'
-                       git branch : 'main', credentialsId: '34d67bef-0861-473b-9714-79d9331d5e80', url : 'https://github.com/TuneableSloth/SampleTomcatApp.git'
+                       git branch : 'master', credentialsId: '34d67bef-0861-473b-9714-79d9331d5e80', url : 'https://github.com/TuneableSloth/SampleTomcatApp.git'
                     }
                
             stage('Package'){
